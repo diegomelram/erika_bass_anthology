@@ -1,0 +1,141 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dcbfa3; /* Parchment color from your image */
+    background-image: linear-gradient(to bottom, #dcbfa3, #c5a88a); 
+    font-family: 'Cinzel', serif; /* A readable but antique font */
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Adds paper texture */
+    padding: 20px;
+    border: 2px solid #5a4632;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+/* Typography */
+.band-name {
+    font-family: 'Metal Mania', cursive; /* Looks like the Maiden font */
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #000;
+    text-shadow: 2px 2px 0px #dcbfa3, 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.album-title {
+    font-family: 'Metal Mania', cursive;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.dedication {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* Image Styling */
+.cover-art-container {
+   margin-bottom: 30px; 
+}
+
+.cover-img {
+    width: 100%;
+    max-width: 400px;
+    /*border: 5px solid #1a1a1a; */
+   /* box-shadow: 5px 5px 15px rgba(0,0,0,0.4); */
+}
+
+/* Ribbon/Banner Style */
+.ribbon-banner {
+    background-color: #dcbfa3;
+    border-top: 2px solid #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.ribbon-banner h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Song List */
+.songs {
+    list-style: none;
+    text-align: left;
+}
+
+.song-item {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #8c735a;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.song-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.audio-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+audio {
+    height: 30px;
+    max-width: 270px;
+}
+
+/* Buttons */
+.download-btn {
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: #dcbfa3;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #8b0000; /* Dark red hover like the bass guitar in the image */
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    border-top: 1px solid #8c735a;
+    padding-top: 10px;
+}
